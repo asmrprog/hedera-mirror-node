@@ -325,6 +325,7 @@ public class DomainBuilder {
 
     public DomainWrapper<CryptoAllowance, CryptoAllowance.CryptoAllowanceBuilder<?, ?>> cryptoAllowance() {
         var builder = CryptoAllowance.builder()
+                .amountGranted(10)
                 .amount(10)
                 .owner(entityId(ACCOUNT).getId())
                 .payerAccountId(entityId(ACCOUNT))
@@ -336,6 +337,7 @@ public class DomainBuilder {
     public DomainWrapper<CryptoAllowanceHistory, CryptoAllowanceHistory.CryptoAllowanceHistoryBuilder<?, ?>>
             cryptoAllowanceHistory() {
         var builder = CryptoAllowanceHistory.builder()
+                .amountGranted(10)
                 .amount(10)
                 .owner(entityId(ACCOUNT).getId())
                 .payerAccountId(entityId(ACCOUNT))
