@@ -325,8 +325,9 @@ public class DomainBuilder {
 
     public DomainWrapper<CryptoAllowance, CryptoAllowance.CryptoAllowanceBuilder<?, ?>> cryptoAllowance() {
         var builder = CryptoAllowance.builder()
-                .amountGranted(10)
                 .amount(10)
+                .amountGranted(100)
+                .createdTimestamp(timestamp())
                 .owner(entityId(ACCOUNT).getId())
                 .payerAccountId(entityId(ACCOUNT))
                 .spender(entityId(ACCOUNT).getId())
@@ -337,8 +338,9 @@ public class DomainBuilder {
     public DomainWrapper<CryptoAllowanceHistory, CryptoAllowanceHistory.CryptoAllowanceHistoryBuilder<?, ?>>
             cryptoAllowanceHistory() {
         var builder = CryptoAllowanceHistory.builder()
-                .amountGranted(10)
                 .amount(10)
+                .amountGranted(100)
+                .createdTimestamp(timestamp())
                 .owner(entityId(ACCOUNT).getId())
                 .payerAccountId(entityId(ACCOUNT))
                 .spender(entityId(ACCOUNT).getId())
@@ -803,6 +805,8 @@ public class DomainBuilder {
     public DomainWrapper<TokenAllowance, TokenAllowance.TokenAllowanceBuilder<?, ?>> tokenAllowance() {
         var builder = TokenAllowance.builder()
                 .amount(10L)
+                .amountGranted(100L)
+                .createdTimestamp(timestamp())
                 .owner(entityId(ACCOUNT).getId())
                 .payerAccountId(entityId(ACCOUNT))
                 .spender(entityId(ACCOUNT).getId())
@@ -815,6 +819,8 @@ public class DomainBuilder {
             tokenAllowanceHistory() {
         var builder = TokenAllowanceHistory.builder()
                 .amount(10L)
+                .amountGranted(100L)
+                .createdTimestamp(timestamp())
                 .owner(entityId(ACCOUNT).getId())
                 .payerAccountId(entityId(ACCOUNT))
                 .spender(entityId(ACCOUNT).getId())
