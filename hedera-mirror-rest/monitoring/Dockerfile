@@ -1,4 +1,4 @@
-FROM node:18.16.0-bullseye-slim
+FROM node:18.18-bullseye-slim
 LABEL maintainer="mirrornode@hedera.com"
 
 # Setup
