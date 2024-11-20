@@ -1,7 +1,7 @@
 # This file is auto generated from it's template,
 # see citusdata/tools/packaging_automation/templates/docker/alpine/alpine.tmpl.dockerfile.
 # Postgres version specified in Docker Hub citusdata/citus:11.2.0 reference in debian build
-FROM postgres:15.1-alpine
+FROM postgres:15.9-alpine
 ARG PG_CRON_DB='mirror_node'
 ARG PG_CRON_VERSION=1.5.2
 ARG PG_PARTMAN_VERSION=4.7.3
