@@ -34,7 +34,7 @@
     "ip-anonymize": "^0.1.0",
     "js-yaml": "^4.1.0",
     "json-bigint": "^1.0.0",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "log4js": "^6.9.1",
     "long": "^5.2.3",
     "mathjs": "^11.8.2",
